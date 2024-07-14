@@ -1,0 +1,182 @@
+/* General reset for margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Section for search and select */
+.sect {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px; /* Adjusted height */
+  background-color: #1565C0; /* Changed background color */
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /* Changed layout */
+  padding: 0 15px; /* Adjusted padding */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Changed shadow */
+}
+
+/* Search input style */
+.sect input[type="search"] {
+  width: 280px; /* Adjusted width */
+  padding: 8px; /* Adjusted padding */
+  height: 35px; /* Adjusted height */
+  border-radius: 5px; /* Added border radius */
+  border: 1px solid #ccc; /* Changed border */
+}
+
+/* Month select style */
+.sect select {
+  width: 180px; /* Adjusted width */
+  padding: 8px; /* Adjusted padding */
+  border-radius: 5px; /* Added border radius */
+  border: 1px solid #ccc; /* Changed border */
+}
+
+/* Main table container */
+.maintable {
+  margin-top: 120px; /* Adjusted margin-top */
+  width: 90%; /* Adjusted width */
+  overflow-x: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Responsive table */
+.table {
+  width: 100%;
+  max-width: 100%;
+  background-color: #FAFAFA; /* Changed background color */
+  border-collapse: collapse;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+/* Table header */
+.table thead {
+  background-color: #212121; /* Changed background color */
+  color: white; /* Changed text color */
+}
+
+/* Table rows */
+.table tbody tr:nth-child(even) {
+  background-color: #E0E0E0; /* Changed background color */
+}
+
+/* Table cells */
+.table td,
+.table th {
+  border: 1px solid #BDBDBD; /* Changed border color */
+  text-align: center; /* Changed text alignment */
+  padding: 10px; /* Adjusted padding */
+}
+
+/* Main statistic box */
+.mainStat {
+  display: flex;
+  height: 180px; /* Adjusted height */
+  width: 320px; /* Adjusted width */
+  font-size: 1.2em; /* Adjusted font size */
+  background-color: #0288D1; /* Changed background color */
+  color: white; /* Changed text color */
+  border: 1px solid #0288D1; /* Changed border */
+  border-radius: 8px; /* Added border radius */
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .sect {
+      flex-direction: column;
+      align-items: center; /* Changed alignment */
+      height: auto; /* Adjusted height */
+      padding: 10px 0; /* Adjusted padding */
+  }
+
+  .sect input[type="search"],
+  .sect select {
+      width: 90%; /* Adjusted width */
+      margin-bottom: 10px; /* Adjusted margin */
+  }
+
+  .table {
+      width: 95%; /* Adjusted width */
+  }
+
+  .barchart,
+  .piechart {
+      width: 100%;
+  }
+}
+
+/* Dataa.css */
+
+/* Main container */
+.Start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Section for search and select */
+.sect {
+  margin-bottom: 20px;
+}
+
+/* Search input and select styles */
+.sect input[type="search"],
+.sect select {
+  padding: 8px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+/* Table styling */
+.table {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+  padding: 10px; /* Adjusted padding */
+  text-align: center;
+}
+
+/* Statistics and charts containers */
+.statistics,
+.mainStat {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.barchart {
+  width: 60%;
+  margin-top: 150px; /* Adjusted margin */
+}
+
+.piechart {
+  width: 60%;
+  margin-top: 150px; /* Adjusted margin */
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+  .table {
+      width: 80%; /* Adjusted width */
+  }
+
+  .barchart,
+  .piechart {
+      width: 100%;
+  }
+}
